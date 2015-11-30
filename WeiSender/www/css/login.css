@@ -1,0 +1,18 @@
+#lo .scroll{
+	height: 100%;
+}
+#base{
+	position: absolute;
+	z-index: 0;
+	text-align: left;
+}
+#u2{
+	position: absolute;
+	left:10%;
+	top:30%;
+}
+#u2 img{
+	position: absolute;
+	left:10%;
+	top:30%;
+}
