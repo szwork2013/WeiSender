@@ -1,0 +1,38 @@
+
+.findImg{
+	position: absolute;
+	z-index: 1;
+	top:10px;
+	left:75px;
+}
+.findshow{
+	position: absolute;
+	width:300px;
+	top:27px;
+	left:30px;
+}
+.findstatus{
+	display: inline-block;
+	color: #007AFF;
+	font-size: 10px;
+	min-width:87px;
+	text-align: center;
+}
+.findlist{
+	position: absolute;
+	z-index: 2;
+	top:65px;
+	left:29px;
+}
+.fitext{
+	font-size: 13px;
+	border-width: 0;
+	padding: 0 0 0 16px;
+}
+.findcont{
+	max-width: 137px;
+}
+.findbtn{
+	max-width:82px;
+	color: #69717D;
+}
