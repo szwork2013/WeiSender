@@ -1,4 +1,5 @@
-<ion-view view-title="微快递" · <ion-nav-bar class="bar-dark" align-title="left">
+<ion-view view-title="微快递" > 
+	<ion-nav-bar class="bar-dark" align-title="left">
 	<ion-nav-buttons side="left">
 		<button class="button button-icon ion-ios-close-empty" ng-click="Exit()">
 		</button>
@@ -8,12 +9,12 @@
 		</button>
 	</ion-nav-buttons>
 	<ion-content id='lo' scroll=false>
-		<div class="row row-wrap divcolor fdiv">
-			<div class="col col-50 btnsel">
-				<button class="button button-clear button-small">查快递</span>
+		<div class="row row-wrap divcolor firdiv">
+			<div class="col col-50 firfdiv">
+				<button class="button button-clear button-small btn" ng-click="GoSerchExpress()">查快递</button>
 			</div>
-			<div class="col col-50 btnuser">
-				<button class="button button-clear button-small ">个人中心</span>
+			<div class="col col-50 firtuser">
+				<button class="button button-clear button-small btn " ng-click="GoUserInfo()">个人中心</button>
 			</div>
 		</div>
 		<div class="row row-wrap divcolor tdiv">
@@ -22,29 +23,29 @@
 			</div>
 			<div class="col col-50 ttdiv">
 				<div class="ttfdiv">
-					<button class="button button-clear button-full ttfbtn">我的包裹</span>
+					<button class="button button-clear button-full " ng-click="GoMyParcel()">我的包裹</button>
 				</div>
 				<div class="tttdiv">
-					<button class="button button-clear button-full ttfbtn">我的订单</span>
+					<button class="button button-clear button-full " ng-click="GoMyOrder()">我的订单</button>
 				</div>
 			</div>
 		</div>
 		<div class="divcolor thdiv">
 			<div class="thfdiv">
-				<button class="button button-clear button-full thfbtn">代取</span>
+				<button class="button button-clear button-full thfbtn" ng-click="GoInstead()">代取</button>
 			</div>
 		</div>
 		<div class="row row-wrap divcolor thdiv">
 			<div class="col col-50 ffdiv">
-				<button class="button button-clear button-full thfbtn">自己取</span>
+				<button class="button button-clear button-full thfbtn" ng-click="GoMySelfGet()">自己取</button>
 			</div>
 			<div class="col col-50 ftdiv">
-				<button class="button button-clear button-full thfbtn">自己寄</span>
+				<button class="button button-clear button-full thfbtn" ng-click="GoMySelfSend()">自己寄</button>
 			</div>
 		</div>
 		<div class="divcolor thdiv">
 			<div class="thfdiv">
-				<button class="button button-clear button-full thfbtn">扫码</span>
+				<button class="button button-clear button-full thfbtn" ng-click="ScanCode()">扫码</button>
 			</div>
 		</div>
 	</ion-content>

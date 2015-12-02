@@ -5,7 +5,7 @@
 // the 2nd parameter is an array of 'requires'
 // 'starter.services' is found in services.js
 // 'starter.controllers' is found in controllers.js
-angular.module('WeiSender', ['ionic','LoginModule','RegistModule','FindPassModule','HomePageModule'])
+angular.module('WeiSender', ['ionic','LoginModule','RegistModule','FindPassModule','HomePageModule','SerchExpressModule','UserInfoModule'])
 
 .run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {
@@ -42,6 +42,12 @@ angular.module('WeiSender', ['ionic','LoginModule','RegistModule','FindPassModul
     cache:'false',
     templateUrl: 'templates/homePage.html',
     controller:'HomePageCtrl'
+  })
+    .state('userInfo', {
+    url: '/userInfo',
+    cache:'false',
+    templateUrl: 'templates/userInfo.html',
+    controller:'UserInfoCtrl'
   })
 
   // Each tab has its own nav history stack:

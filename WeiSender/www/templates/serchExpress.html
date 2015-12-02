@@ -1,0 +1,26 @@
+<ion-modal-view ng-controller="SerchExpressCtrl">
+	<ion-header-bar align-title="left" class="bar-dark">
+		<button class="button button-icon ion-ios-close-empty" ng-click="Exit()"></button>
+		<h1 class="title">微快递</h1>
+		<button class="button button-icon ion-ios-keypad-outline" ng-click="Shared()"></button>
+	</ion-header-bar>
+	<ion-content scroll=false>
+		 <div class="bar bar-header sertitle">
+            <a href="#" class="button button-icon icon ion-ios-arrow-back" ng-click="CloseSerchExpress()"></a>
+            <h1 class="title titletext">查快递</h1>
+        </div>
+        <div class="serfdiv">
+        	<img ng-src="img/serchExpress/numback.png" class="serimgin"/>
+        	<div class="serffdiv">
+				<span >运单号：</span>
+				<input class="serfffdiv" type="text" ng-model="expressNum" placeholder="请输入运单号" required>
+        	</div>
+        </div>
+        <div class="sertdiv">
+        	<button class="button button-full button-small button-assertive">查询</button>
+        </div>
+        <div ng-if="resultlength">
+        	
+        </div>
+	</ion-content>
+	</ion-modal-view>
