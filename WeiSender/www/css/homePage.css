@@ -1,0 +1,75 @@
+.fdiv{
+	height: 10%;
+}
+.divcolor{
+	background-color: #33CD5F;
+}
+.btnsel{
+	text-align: left;
+}
+.btnuser{
+	text-align: right;
+}
+.tdiv{
+	border:solid;
+	border-width: 7px;
+	border-color:#D1D3D6;
+	padding: 0px;
+	height: 34%;
+}
+.imgdiv{
+	height:100%
+	margin: 0px;
+	padding: 0px;
+}
+.imgdiv img{
+	height:100%
+	margin: 0px;
+	padding: 0px;
+}
+.ttdiv{
+	padding: 0px;
+}
+.ttfdiv{
+	height:96px;
+	border:solid;
+	border-width: 0px 0px 7px 7px;
+	border-color:#D1D3D6;
+	padding: 1px;
+}
+.ttfbtn{
+	  min-height:75px;
+}
+.tttdiv{
+	height:96px;
+	border:solid;
+	border-width: 0px 0px 0px 7px;
+	border-color:#D1D3D6;
+	padding: 1px;
+}
+.thdiv{
+	border:solid;
+	border-width:0px 7px 7px 7px;
+	border-color:#D1D3D6;
+	padding: 0px;
+	height:18.7%
+}
+.thfdiv{
+	padding: 2px;
+	width: 100%;
+}
+.thfbtn{
+	min-height:50px;
+}
+.ffdiv{
+	border:solid;
+	border-width:0px 3px 0px 0px;
+	border-color:#D1D3D6;
+	padding: 0px;
+}
+.ftdiv{
+	border:solid;
+	border-width:0px 0px 0px 3px;
+	border-color:#D1D3D6;
+	padding: 0px;
+}

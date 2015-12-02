@@ -1,5 +1,5 @@
 loginModule
-.controller('LoginCtrl',['$scope','$ionicModal',function($scope,$ionicModal){
+.controller('LoginCtrl',['$scope','$ionicModal','$state',function($scope,$ionicModal,$state){
 	$scope.Login=Login;
 	$scope.Regist=Regist;
 	$scope.ReSetPassword=ReSetPassword;
@@ -7,7 +7,7 @@ loginModule
 	$scope.GoLoginback=GoLoginback;
 	
 	function Login(user){
-		
+		$state.go('home');
 	};
 	function Regist(){
 		$ionicModal.fromTemplateUrl('templates/regist.html',{
