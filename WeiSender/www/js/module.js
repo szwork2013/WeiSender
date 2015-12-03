@@ -10,3 +10,6 @@ var serchExpressModule=angular.module('SerchExpressModule',[]);
 
 var userInfoModule=angular.module('UserInfoModule',[]);
 
+
+var myEvaluateModule=angular.module('MyEvaluateModule',[]);
+

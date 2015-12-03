@@ -1,0 +1,29 @@
+<ion-modal-view ng-controller="MyEvaluateCtrl">
+	<ion-header-bar align-title="left" class="bar-dark">
+		<button class="button button-icon ion-ios-close-empty" ng-click="Exit()"></button>
+		<h1 class="title">微快递</h1>
+		<button class="button button-icon ion-ios-keypad-outline" ng-click="Shared()"></button>
+	</ion-header-bar>
+	<ion-content scroll=false>
+		<div class="bar bar-header sertitle">
+			<a href="#" class="button button-icon icon ion-ios-arrow-back" ng-click="CloseMyEvluate()"></a>
+			<h1 class="title titletext">给代送员的评价</h1>
+		</div>
+		<div class="list myfdiv">
+			<div class="myffdiv" ng-repeat="evaluate in evaluates">
+				<div class="myfffdiv">
+					<span>快递员:</span>
+					<span>{{evaluate.name}}</span>
+					<div class="myffffdiv" >
+						<span>服务评分:</span>
+						<div ng-repeat="Img in evaluate.Imgs">
+							<img ng-src="img/myEvaluate/xingxing.png" />
+						</div>
+						<span>{{evaluate.scode}}分</span>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+	</ion-content>
+</ion-modal-view>

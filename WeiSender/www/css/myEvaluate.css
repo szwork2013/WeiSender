@@ -1,0 +1,22 @@
+.myfdiv{
+	position: absolute;
+	top:7%;
+	width:100%;
+	left:0;
+}
+.myffdiv{
+	width:100%;
+	border:solid;
+	border-width: 1px;
+	border-color:#A79D9D;
+	height:120px;
+	margin-top: 7px;
+}
+.myfffdiv{
+	width:100%;
+	display: inline-flex;
+}
+.myffffdiv{
+	display: inline-flex;
+	margin-left: 31%;
+}

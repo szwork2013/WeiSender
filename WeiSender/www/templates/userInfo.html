@@ -7,10 +7,58 @@
 		<button class="button button-icon ion-ios-keypad-outline" ng-click="Shared()">
 		</button>
 	</ion-nav-buttons>
-	<ion-content scroll=false>
+	<ion-content scroll=false ng-model="userInfo">
 		<div class="bar bar-header sertitle">
 			<a href="#" class="button button-icon icon ion-ios-arrow-back" ng-click="GoHomePage()"></a>
 			<h1 class="title titletext">个人中心</h1>
+		</div>
+		<div class="row row-wrap ufdiv">
+			<div class="col col-33 uffdiv">
+				<img ng-src="img/userInfo/headImg.png" />
+			</div>
+			<div class="col col-67 uftdiv">
+				<span class="uftname">{{userInfo.name}}</span>
+				<img class="uftImg" ng-src="img/userInfo/confirm.png"/>
+				<span class="uftcon">√已认证</span>
+				<span class="uftnum">{{userInfo.telephoneNum}}</span>
+				<button class="button button-icon ion-ios-arrow-forward uftbtn"></button>
+				<img class="ufttImg" ng-src="img/userInfo/code.png"/>
+			</div>
+		</div>
+		<div class="row row-wrap utdiv">
+			<div class="col col-33 utfdiv">
+				<span>{{userInfo.balance}}</span>
+				<br/>
+				<span>我的余额</span>
+			</div>
+			<div class="col col-33 uttdiv">
+				<span>{{userInfo.Integral}}</span>
+				<br/>
+				<span>我的积分</span>
+			</div>
+			<div class="col col-33 utfdiv">
+				<span>{{userInfo.friendCount}}</span>
+				<br/>
+				<span>我的好友</span>
+			</div>
+		</div>
+		<div class="uthdiv">
+				<div class="uthfdiv">
+					<img class="uthImg" ng-src="img/userInfo/listImg.png"/>
+					<button class="button icon-right button-icon ion-ios-arrow-forward uthbtn" ng-click="GoMyEvaluate()">我的评价</button>
+				</div>
+				<div class="uthtdiv">
+					<img class="uthImg" ng-src="img/userInfo/listImg.png"/>
+					<button class="button icon-right button-icon ion-ios-arrow-forward uthbtn" ng-click="GoAddressManager()">地址管理</button>
+				</div>
+				<div class="uththdiv">
+					<img class="uthImg" ng-src="img/userInfo/listImg.png"/>
+					<button class="button icon-right button-icon ion-ios-arrow-forward uthbtn" ng-click="GoMore()">更多</button>
+				</div>
+				<div class="uthfodiv">
+					<img class="uthImg" ng-src="img/userInfo/listImg.png"/>
+					<button class="button icon-right button-icon ion-ios-arrow-forward uthbtn" ng-click="GoSetting()">设置</button>
+				</div>
 		</div>
 	</ion-content>
 </ion-view>

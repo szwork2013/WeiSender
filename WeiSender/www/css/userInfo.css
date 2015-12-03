@@ -1,0 +1,124 @@
+.ufdiv{
+	position: absolute;
+	background-color: #11C1F3;
+	width:100%;
+	height: 23%;
+	top:7%;
+}
+.uffdiv{
+	position: absolute;
+	height:90%;
+	padding-top: 5%;
+	text-align: right;
+}
+.uftdiv{
+	position: absolute;
+	height:90%;
+	padding-top: 5%;
+	left:33%;
+}
+.uftname{
+	position: absolute;
+	color: white;
+	top:34%;
+	left:10%;
+}
+.uftImg{
+	position: absolute;
+	top:33%;
+	left:33%;
+}
+.uftcon{
+	position: absolute;
+	color:red;
+	top:33%;
+	left:36%;
+	font-size: 10px;
+}
+.uftnum{
+	position: absolute;
+	top: 63%;
+	left:10%;
+	color:white;
+	font-size: 12px;
+	
+}
+.uftbtn{
+	position: absolute;
+	top:30%;
+	right: 2%;
+}
+.ufttImg{
+	position: absolute;
+	width:10%;
+	top:78%;
+	right: 1%;
+}
+.utdiv{
+	position: absolute;
+	top:30%;
+	background-color: #E6EAEC;
+	padding-top: 5px;
+	border:solid;
+	border-width: 0px 0px 20px 0px;
+	border-color: #D4DADC;
+}
+.utfdiv{
+	color:#0A9DC7;
+	text-align: center;
+}
+.uttdiv{
+	color:#0A9DC7;
+	text-align: center;
+	border: solid;
+	border-color: #A79D9D;
+	border-width: 0px 1px;
+}
+.uthdiv{
+	position:absolute;
+	top:42%;
+	width:100%;
+}
+.uthfdiv{
+	position: absolute;
+	width:100%;
+	border: solid;
+	border-width: 0px 0px 1px 0px;
+	border-color: #A79D9D;
+}
+.uthtdiv{
+	position: absolute;
+	width:100%;
+	border: solid;
+	border-width: 0px 0px 1px 0px;
+	border-color: #A79D9D;
+	margin-top:14%;
+}
+.uththdiv{
+	position: absolute;
+	width:100%;
+	border: solid;
+	border-width: 0px 0px 1px 0px;
+	border-color: #A79D9D;
+	margin-top:28%;
+}
+.uthfodiv{
+	position: absolute;
+	width:100%;
+	border: solid;
+	border-width: 0px 0px 1px 0px;
+	border-color: #A79D9D;
+	margin-top:42%;
+}
+.uthImg{
+	width:10%;
+	margin: 2% 0 0 10%;
+}
+
+.uthbtn{
+	position: absolute;
+	top:4%;
+	width:80%;
+	text-align: left;
+	color:#9C9898 ;
+}
