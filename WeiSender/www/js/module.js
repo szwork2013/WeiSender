@@ -13,3 +13,6 @@ var userInfoModule=angular.module('UserInfoModule',[]);
 
 var myEvaluateModule=angular.module('MyEvaluateModule',[]);
 
+var myParcelModule=angular.module('MyParcelModule',[]);
+
+

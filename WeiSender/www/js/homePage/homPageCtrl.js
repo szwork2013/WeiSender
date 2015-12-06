@@ -36,7 +36,7 @@ homePageModule
 		};
 		//我的包裹
 		function GoMyParcel() {
-
+		$state.go('myParcel');
 		};
 		//我的订单
 		function GoMyOrder() {
