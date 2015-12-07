@@ -13,6 +13,9 @@ var userInfoModule=angular.module('UserInfoModule',[]);
 
 var myEvaluateModule=angular.module('MyEvaluateModule',[]);
 
+var addressManagerModule=angular.module('AddressManagerModule',[]);
+
+
 var myParcelModule=angular.module('MyParcelModule',[]);
 
 

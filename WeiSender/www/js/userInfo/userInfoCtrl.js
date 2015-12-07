@@ -7,6 +7,7 @@ userInfoModule.controller('UserInfoCtrl',['$scope','$state','$ionicModal',functi
 	$scope.GoMore=GoMore;
 	$scope.GoSetting=GoSetting;
 	$scope.CloseMyEvluate=CloseMyEvluate;
+	$scope.CloseAddressManager=CloseAddressManager;
 	$scope.userInfo={
 		name:'王红军',
 		telephoneNum:'1581234567',
@@ -36,8 +37,17 @@ userInfoModule.controller('UserInfoCtrl',['$scope','$state','$ionicModal',functi
 		$scope.myEvaluate.hide();
 	}
 	function GoAddressManager(){
-		
+		$ionicModal.fromTemplateUrl('templates/addressManager.html',{
+			scope:$scope,
+			animation:'slide-in-up'
+		}).then(function(modal){
+			$scope.addressManage=modal;
+			$scope.addressManage.show();
+		})
 	};
+	function CloseAddressManager(){
+		$scope.addressManage.hide();
+	}
 	function GoMore(){
 		
 	};

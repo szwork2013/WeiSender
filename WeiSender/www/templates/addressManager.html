@@ -1,0 +1,32 @@
+<ion-modal-view ng-controller="AddressManagerCtrl">
+	<ion-header-bar align-title="left" class="bar-dark">
+		<button class="button button-icon ion-ios-close-empty" ng-click="Exit()"></button>
+		<h1 class="title">微快递</h1>
+		<button class="button button-icon ion-ios-keypad-outline" ng-click="Shared()"></button>
+	</ion-header-bar>
+	<ion-content scroll=false>
+		<div class="bar bar-header">
+			<a href="#" class="button button-icon icon ion-ios-arrow-back" ng-click="CloseAddressManager()"></a>
+			<a href="#" class="button button-clear titleadd">新建地址</a>
+		</div>
+		<div class="list amfdiv">
+			<div ng-repeat="address in addresses" class="amffdiv">
+				<div class="row row-wrap">
+					<div class="col col-80">
+						<span class="maspanleft">{{address.people}}</span>
+						<span class="maspanleft maspanf">{{address.telephoneNum}}</span>
+						<br/>
+						<span class="maspanleft mafontformat">{{address.city}}</span>
+						<br/>
+						<span class="maspanleft mafontformat">{{address.detailAddress}}</span>
+					</div>
+					<div class="col col-20 ">
+						<button class="button button-small button-positive mabtn">编辑</button>
+						<br/>
+						<button class="button button-small button-positive mabtn">删除</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</ion-content>
+</ion-modal-view>

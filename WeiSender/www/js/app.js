@@ -5,7 +5,7 @@
 // the 2nd parameter is an array of 'requires'
 // 'starter.services' is found in services.js
 // 'starter.controllers' is found in controllers.js
-angular.module('WeiSender', ['ionic','LoginModule','RegistModule','FindPassModule','HomePageModule','SerchExpressModule','UserInfoModule','MyEvaluateModule','MyParcelModule'])
+angular.module('WeiSender', ['ionic','LoginModule','RegistModule','FindPassModule','HomePageModule','SerchExpressModule','UserInfoModule','MyEvaluateModule','MyParcelModule','AddressManagerModule'])
 
 .run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {

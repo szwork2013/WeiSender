@@ -1,0 +1,32 @@
+.button-clear.button-clear{
+	border-color: transparent;
+    background: none;
+    box-shadow: none;
+    color: #2DB8EF;
+}
+.amfdiv{
+	position: absolute;
+	top:7%;
+	width:100%;
+	left:0;
+}
+.amffdiv{
+	width:100%;
+	border: solid;
+	border-color: #999999;
+	border-width: 3px 0px 1px 0px;
+	margin-top: 7px;
+}
+.maspanf{
+	margin-left: 15%;
+}
+.maspanleft{
+	margin-left:5%;
+}
+.mafontformat{
+	font-size: 15px;
+	color: #999999;
+}
+.mabtn{
+	max-height: 20px;
+}
