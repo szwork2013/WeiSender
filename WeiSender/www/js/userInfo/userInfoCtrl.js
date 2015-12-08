@@ -4,10 +4,11 @@ userInfoModule.controller('UserInfoCtrl',['$scope','$state','$ionicModal',functi
 	$scope.GoHomePage=GoHomePage;
 	$scope.GoMyEvaluate=GoMyEvaluate;
 	$scope.GoAddressManager=GoAddressManager;
-	$scope.GoMore=GoMore;
+	$scope.GoMoreInfo=GoMoreInfo;
 	$scope.GoSetting=GoSetting;
 	$scope.CloseMyEvluate=CloseMyEvluate;
 	$scope.CloseAddressManager=CloseAddressManager;
+	$scope.CloseMoreInfo=CloseMoreInfo;
 	$scope.userInfo={
 		name:'王红军',
 		telephoneNum:'1581234567',
@@ -48,9 +49,18 @@ userInfoModule.controller('UserInfoCtrl',['$scope','$state','$ionicModal',functi
 	function CloseAddressManager(){
 		$scope.addressManage.hide();
 	}
-	function GoMore(){
-		
+	function GoMoreInfo(){
+		$ionicModal.fromTemplateUrl('templates/moreInfo.html',{
+			scope:$scope,
+			animation:'slide-in-up'
+		}).then(function(modal){
+			$scope.moreInfo=modal;
+			$scope.moreInfo.show();
+		})
 	};
+	function CloseMoreInfo(){
+		$scope.moreInfo.hide();
+	}
 	function GoSetting(){
 		
 	};

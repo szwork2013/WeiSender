@@ -1,0 +1,35 @@
+<ion-modal-view>
+	<ion-header-bar align-title="left" class="bar-dark">
+		<button class="button button-icon ion-ios-close-empty" ng-click="Exit()"></button>
+		<h1 class="title">微快递</h1>
+		<button class="button button-icon ion-ios-keypad-outline" ng-click="Shared()"></button>
+	</ion-header-bar>
+	<ion-content scroll=false>
+		<div class="adfdiv">
+			<div class="adffdiv">
+				<span class="adffspan">姓名</span>
+				<input type="text" placeholder="请输入姓名" class="adffin"/>
+			</div>
+			<div class="adffdiv">
+				<span class="adffspan">联系方式</span>
+				<input type="text" placeholder="请输入手机号码" class="adffin"/>
+			</div>
+			<div class="adffdiv">
+				<span class="adffspan">所在区域</span>
+				<input type="text" placeholder="请输入姓名" class="adffin"/>
+			</div>
+			<div class="adffdiv">
+				<span class="adffspan">详细地址</span>
+				<input type="text" placeholder="请输入详细地址" class="adffin"/>
+			</div>
+		</div>
+		<div class="row row-wrap addiv">
+			<div class="col col-67 addfdiv">
+				<button class="button button-assertive button-full" ng-click="CloseAddNewAddress()">取消</button>
+			</div>
+			<div class="col col-33 addfdiv">
+				<button class="button button-balanced button-full" ng-click="SuccessAddAddress()">完成</button>
+			</div>
+		</div>
+	</ion-content>
+</ion-modal-view>
