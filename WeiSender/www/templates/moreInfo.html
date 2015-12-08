@@ -5,9 +5,36 @@
 		<button class="button button-icon ion-ios-keypad-outline" ng-click="Shared()"></button>
 	</ion-header-bar>
 	<ion-content scroll=false>
-		<div class="bar bar-header">
+		<div class="bar bar-header moretitle">
 			<a href="#" class="button button-icon icon ion-ios-arrow-back" ng-click="CloseMoreInfo()"></a>
-			<h1>更多</h1>
+			<h1 class="title titletext">更多</h1>
+		</div>
+		<div class="mifdiv">
+			<img class="mifimg" ng-src="img/moreInfo/title.png"/>
+			<br/>
+			<span class="mifspan">微快递 v 0.0.1 </span>
+		</div>
+		<div class="mitdiv">
+				<div class="uthfdiv">
+					<img class="uthImg" ng-src="img/userInfo/listImg.png"/>
+					<button class="button icon-right button-icon ion-ios-arrow-forward uthbtn" ng-click="About()">关于我们</button>
+				</div>
+				<div class="uthtdiv">
+					<img class="uthImg" ng-src="img/userInfo/listImg.png"/>
+					<button class="button icon-right button-icon ion-ios-arrow-forward uthbtn" ng-click="UpdateApp()">软件更新</button>
+				</div>
+				<div class="uththdiv">
+					<img class="uthImg" ng-src="img/userInfo/listImg.png"/>
+					<button class="button icon-right button-icon ion-ios-arrow-forward uthbtn" ng-click="Advice()">意见反馈</button>
+				</div>
+				<div class="uthfodiv">
+					<img class="uthImg" ng-src="img/userInfo/listImg.png"/>
+					<button class="button icon-right button-icon ion-ios-arrow-forward uthbtn" ng-click="Help()">使用帮助</button>
+				</div>
+				<div class="mitfdiv">
+					<img class="uthImg" ng-src="img/userInfo/listImg.png"/>
+					<button class="button icon-right button-icon ion-ios-arrow-forward uthbtn" ng-click="CustomerService()">客户中心</button>
+				</div>
 		</div>
 	</ion-content>
 </ion-modal-view>

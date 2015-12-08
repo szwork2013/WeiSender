@@ -1,0 +1,23 @@
+<ion-modal-view ng-controller="SettingCtrl">
+	<ion-header-bar align-title="left" class="bar-dark">
+		<button class="button button-icon ion-ios-close-empty" ng-click="Exit()"></button>
+		<h1 class="title">微快递</h1>
+		<button class="button button-icon ion-ios-keypad-outline" ng-click="Shared()"></button>
+	</ion-header-bar>
+	<ion-content scroll=false>
+		<div class="bar bar-header moretitle">
+			<a href="#" class="button button-icon icon ion-ios-arrow-back" ng-click="CloseSetting()"></a>
+			<h1 class="title titletext">设置</h1>
+		</div>
+		<div class="setfdiv">
+			<div class="uthfdiv">
+				<img class="uthImg" ng-src="img/userInfo/listImg.png" />
+				<button class="button icon-right button-icon ion-ios-arrow-forward uthbtn" ng-click="UpdateLoginPass()">密码修改</button>
+			</div>
+			<div class="uthtdiv">
+				<img class="uthImg" ng-src="img/userInfo/listImg.png" />
+				<button class="button icon-right button-icon ion-ios-arrow-forward uthbtn" ng-click="UpdateAchivePass()">支付密码修改</button>
+			</div>
+		</div>
+	</ion-content>
+</ion-modal-view>

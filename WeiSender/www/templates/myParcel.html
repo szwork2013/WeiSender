@@ -12,10 +12,19 @@
 			<a href="#" class="button button-icon icon ion-ios-arrow-back" ng-click="GoHomePage()"></a>
 			<h1 class="title titletext">我的包裹</h1>
 		</div>
-		<div class="tabs tabs-top tabs-stable">
-			<a class="tab-item">未处理</a>
-			<a class="tab-item active">已取</a>
-			<a class="tab-item">自寄</a>
+		<div class="tabs tabs-top tabs-stable" ng-model="selectIndex">
+			<a class="tab-item" ng-class="{'active':selectIndex==0}" ng-click="ChangeShow(0)">未处理</a>
+			<a class="tab-item" ng-class="{'active':selectIndex==1}" ng-click="ChangeShow(1)">已取</a>
+			<a class="tab-item" ng-class="{'active':selectIndex==2}" ng-click="ChangeShow(2)">自寄</a>
+		</div>
+		<div ng-if="selectIndex==0">
+			
+		</div>
+		<div ng-if="selectIndex==1">
+			
+		</div>
+		<div ng-if="selectIndex==2">
+			
 		</div>
 	</ion-content>
 </ion-view>

@@ -9,6 +9,7 @@ userInfoModule.controller('UserInfoCtrl',['$scope','$state','$ionicModal',functi
 	$scope.CloseMyEvluate=CloseMyEvluate;
 	$scope.CloseAddressManager=CloseAddressManager;
 	$scope.CloseMoreInfo=CloseMoreInfo;
+	$scope.CloseSetting=CloseSetting;
 	$scope.userInfo={
 		name:'王红军',
 		telephoneNum:'1581234567',
@@ -62,6 +63,15 @@ userInfoModule.controller('UserInfoCtrl',['$scope','$state','$ionicModal',functi
 		$scope.moreInfo.hide();
 	}
 	function GoSetting(){
-		
+		$ionicModal.fromTemplateUrl('templates/setting.html',{
+			scope:$scope,
+			animation:'slide-in-up'
+		}).then(function(modal){
+			$scope.setting=modal;
+			$scope.setting.show();
+		})
 	};
+	function CloseSetting(){
+			$scope.setting.hide();
+	}
 }])
