@@ -10,15 +10,9 @@ var serchExpressModule=angular.module('SerchExpressModule',[]);
 
 var userInfoModule=angular.module('UserInfoModule',[]);
 
-
-var myEvaluateModule=angular.module('MyEvaluateModule',[]);
-
-var addressManagerModule=angular.module('AddressManagerModule',[]);
-
-
-var moreInfoModule=angular.module('MoreInfoModule',[]);
-
 var myParcelModule=angular.module('MyParcelModule',[]);
+
+var myOrderModule=angular.module('MyOrderModule',[]);
 
 
 

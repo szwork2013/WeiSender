@@ -1,4 +1,4 @@
-addressManagerModule
+userInfoModule
 .controller('AddressManagerCtrl',['$scope','$ionicModal',function($scope,$ionicModal){
 	$scope.Exit=Exit;
 	$scope.Shared=Shared;

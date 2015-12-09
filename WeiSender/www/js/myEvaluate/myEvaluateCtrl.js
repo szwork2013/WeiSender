@@ -1,4 +1,4 @@
-myEvaluateModule
+userInfoModule
 .controller('MyEvaluateCtrl',['$scope','$state',function($scope,$state){
 	$scope.Exit=Exit;
 	$scope.Shared=Shared;

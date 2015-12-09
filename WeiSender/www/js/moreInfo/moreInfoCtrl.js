@@ -1,4 +1,4 @@
-moreInfoModule
+userInfoModule
 .controller('MoreInfoCtrl',['$scope',function($scope){
 	$scope.About=About;
 	$scope.UpdateApp=UpdateApp;

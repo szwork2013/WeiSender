@@ -7,7 +7,7 @@
 		<button class="button button-icon ion-ios-keypad-outline" ng-click="Shared()">
 		</button>
 	</ion-nav-buttons>
-	<ion-content>
+	<ion-content scroll=false>
 		<div class="bar bar-header sertitle">
 			<a href="#" class="button button-icon icon ion-ios-arrow-back" ng-click="GoHomePage()"></a>
 			<h1 class="title titletext">我的包裹</h1>
@@ -17,14 +17,60 @@
 			<a class="tab-item" ng-class="{'active':selectIndex==1}" ng-click="ChangeShow(1)">已取</a>
 			<a class="tab-item" ng-class="{'active':selectIndex==2}" ng-click="ChangeShow(2)">自寄</a>
 		</div>
-		<div ng-if="selectIndex==0">
-			
+		<div ng-if="selectIndex==0" class="mpfdiv">
+			<ion-scroll>
+				<div ng-repeat="notparcel in notparcels" class="mpffdiv">
+					<div class="mpfffdiv">
+						<span class="mpfspan">取件号码：{{notparcel.getNum}}</span>
+						<br/>
+						<span>快递公司：{{notparcel.company}}</span>
+						<br/>
+						<span>快递单号：{{notparcel.parcelNum}}</span>
+						<br/>
+						<span>到件时间：{{notparcel.time}}</span>
+					</div>
+					<div class="mpfftdiv">
+						<button class="button button-small mpfbtn">手动签收</button>
+						<button class="button button-small mpfbtn">扫码签收</button>
+					</div>
+
+				</div>
+			</ion-scroll>
 		</div>
-		<div ng-if="selectIndex==1">
-			
+		<div ng-if="selectIndex==1" class="mpfdiv">
+			<ion-scroll>
+				<div ng-repeat="parcel in parcels" class="mptdiv">
+					<div class="mptfdiv">
+						<span>快递单号：{{parcel.parcelNum}}</span>
+						<br/>
+						<span>快递公司：{{parcel.company}}</span>
+					</div>
+					<div class="mpttdiv">
+						<span>取件码：{{parcel.getNum}}</span>
+						<br/>
+						<span>{{parcel.getTime}}</span>
+					</div>
+				</div>
+			</ion-scroll>
 		</div>
-		<div ng-if="selectIndex==2">
-			
+		<div ng-if="selectIndex==2" class="mpfdiv">
+			<ion-scroll>
+				<div ng-repeat="statusparcel in statusparcels" class="mptdiv">
+					<div class="mpthfdiv">
+						<span>快递单号：{{statusparcel.parcelNum}}</span>
+						<br/>
+						<span>快递公司：{{statusparcel.company}}</span>
+					</div>
+					<div class="mpthtdiv">
+						<span>状态：{{parstatusparcelcel.status}}</span>
+						<br/>
+						<span>{{statusparcel.updateTime}}</span>
+					</div>
+					<div class="mpththdiv">
+						<button class="button button-icon button-full ion-ios-trash "></button>
+					</div>
+				</div>
+			</ion-scroll>
 		</div>
 	</ion-content>
 </ion-view>

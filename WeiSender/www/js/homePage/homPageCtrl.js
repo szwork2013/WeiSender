@@ -40,7 +40,7 @@ homePageModule
 		};
 		//我的订单
 		function GoMyOrder() {
-
+		$state.go('myOrder');
 		};
 		//代取
 		function GoInstead() {
