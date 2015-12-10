@@ -12,5 +12,25 @@
 			<a href="#" class="button button-icon icon ion-ios-arrow-back" ng-click="GoHomePage()"></a>
 			<h1 class="title titletext">我的订单</h1>
 		</div>
+		<div class="tabs tabs-top tabs-stable" ng-model="selectIndex">
+			<a class="tab-item" ng-class="{'active':selectIndex==0}" ng-click="ChangeShow(0)">进行中</a>
+			<a class="tab-item" ng-class="{'active':selectIndex==1}" ng-click="ChangeShow(1)">已完成</a>
+			<a class="tab-item" ng-class="{'active':selectIndex==2}" ng-click="ChangeShow(2)">已取消</a>
+		</div>
+		<div ng-if="selectIndex==0" class="mpfdiv">
+			<ion-scroll>
+				
+			</ion-scroll>
+		</div>
+		<div ng-if="selectIndex==1" class="mpfdiv">
+			<ion-scroll>
+				
+			</ion-scroll>
+		</div>
+		<div ng-if="selectIndex==2" class="mpfdiv">
+			<ion-scroll>
+				
+			</ion-scroll>
+		</div>
 	</ion-content>
 </ion-view>

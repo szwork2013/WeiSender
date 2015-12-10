@@ -1,0 +1,72 @@
+<ion-view view-title="微快递">
+	<ion-nav-buttons side="left">
+		<button class="button button-icon ion-ios-close-empty" ng-click="Exit()">
+		</button>
+	</ion-nav-buttons>
+	<ion-nav-buttons side="right">
+		<button class="button button-icon ion-ios-keypad-outline" ng-click="Shared()">
+		</button>
+	</ion-nav-buttons>
+	<ion-content scroll=false ng-model="userInfo">
+		<div class="bar bar-header moretitle">
+			<a href="#" class="button button-icon icon ion-ios-arrow-back" ng-click="GoHomePage()"></a>
+			<h1 class="title titletext">代取</h1>
+		</div>
+		<div class="infdiv">
+			<div class="inffdiv">
+				<label ng-model='isshun' ng-click='isshun=!isshun;iszhuan=false'>
+					<i ng-if="!isshun" class="icon ion-ios-circle-outline"></i>
+					<i ng-if="isshun" class="icon ion-ios-circle-filled"></i>
+				</label>
+				<span class="inffspan">顺带取</span>
+				<label ng-model='iszhuan' class='relsen' ng-click='iszhuan=!iszhuan;isshun=false'>
+					<i ng-if="!iszhuan" class="icon ion-ios-circle-outline"></i>
+					<i ng-if="iszhuan" class="icon ion-ios-circle-filled"></i>
+				</label>
+				<span class="inffspan">专门取</span>
+			</div>
+			<div class="inftdiv">
+				<div class="inftfdiv">
+					<span class='inftfspan'>我的信息</span>
+					<div class="inftffdiv">
+						<div class="inftfffdiv">
+							<span class="inftfffspan">
+							{{userinfo.name}}
+						</span>
+							<span class="inftfftspan">
+							{{userinfo.telephoneNum}}
+						</span>
+							<br/>
+							<span class="inftffthspan">
+							{{userinfo.address}}
+						</span>
+						</div>
+						<div class="inftfftdiv">
+							<button class="button button-icon ion-ios-arrow-forward"></button>
+						</div>
+					</div>
+				</div>
+				<div class="inftfdiv">
+					<span class='inftfspan'>订单信息</span>
+					<div class="inftftdiv">
+
+					</div>
+				</div>
+				<div class="inftfdiv">
+					<span class='inftfspan'>快递信息</span>
+					<div class="inftfthdiv">
+
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row row-wrap addiv">
+			<div class="col col-67 addfdiv">
+				<button class="button button-assertive button-full" ng-click="CloseAddNewAddress()">取消</button>
+			</div>
+			<div class="col col-33 addfdiv">
+				<button class="button button-balanced button-full" ng-click="SuccessAddAddress()">完成</button>
+			</div>
+		</div>
+	</ion-content>
+</ion-view>

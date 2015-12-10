@@ -44,7 +44,7 @@ homePageModule
 		};
 		//代取
 		function GoInstead() {
-
+		$state.go('instead');
 		};
 		//自己取
 		function GoMySelfGet() {

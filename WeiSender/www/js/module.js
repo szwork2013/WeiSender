@@ -14,6 +14,10 @@ var myParcelModule=angular.module('MyParcelModule',[]);
 
 var myOrderModule=angular.module('MyOrderModule',[]);
 
+var insteadModule=angular.module('InsteadModule',[]);
+
+
+
 
 
 
