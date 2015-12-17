@@ -27,7 +27,9 @@
 			</div>
 			<div class="inftdiv">
 				<div class="inftfdiv">
-					<span class='inftfspan'>我的信息</span>
+					<div>
+						<span class='inftfspan'>我的信息</span>
+					</div>
 					<div class="inftffdiv">
 						<div class="inftfffdiv">
 							<span class="inftfffspan">
@@ -47,9 +49,25 @@
 					</div>
 				</div>
 				<div class="inftfdiv">
-					<span class='inftfspan'>订单信息</span>
-					<div class="inftftdiv">
-
+					<div>
+						<span class='inftfspan'>订单信息</span>
+					</div>
+					<div class="infttdiv">
+						<div class='row row-wrap infttfdiv' ng-model='price=0'>
+							<div class='col col-67'>
+								<span>服务消费：{{price}} 元
+									<button class="button button-icon ion-ios-minus"></button>
+									<button class="button button-icon ion-ios-plus"></button>
+								</span>
+								
+							</div>
+							<div class='col col-33'>
+								
+							</div>
+						</div>
+						<div>
+							<input type="text" placeholder="需不需要填写备注呢？" />
+						</div>
 					</div>
 				</div>
 				<div class="inftfdiv">

@@ -26,21 +26,27 @@
 	border: solid;
     border-width: 1px 0 0 0;
     border-color: #33A1AF;
+    display: inline-flex;
+    width: 100%;
 }
 .inftfffspan{
 
 }
 .inftfftspan{
-	
+	margin-left: 5%;
+    font-weight: bold;
 }
 .inftffthspan{
 	
 }
 .inftfffdiv{
-	
+	width:80%;
+	margin-left: 2%;
+	line-height: 30px;
 }
 .inftfftdiv{
-	
+	width:20%;
+	text-align: right;
 }
 .inftftdiv{
 	border: solid;
@@ -51,5 +57,8 @@
 	    border: solid;
     border-width: 1px 0 0 0;
     border-color: #33A1AF;
+}
+.inftttfdiv{
+	background-image: url('img/instead/jian.png');
 }
 
